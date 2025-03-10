@@ -26,7 +26,6 @@ void en_FVFG(bitmask_t& hcode, halfmask_t X, halfmask_t Y, halfmask_t Z, int ord
 	halfmask_t groupX = 0, groupY = 0, groupZ = 0;
 	hcode = 0;
 	int pos = 0;
-
 	int groupNum = (order - 1) / groupSize + 1;
 	int startPos = groupNum * groupSize - 1;
 	int dimSize = 1 << groupSize;
@@ -73,8 +72,6 @@ void de_FVFG(bitmask_t hcode, halfmask_t& X, halfmask_t& Y, halfmask_t& Z, int o
 		Z = (Z << groupSize) | (posKey & mask);
 		Y = (Y << groupSize) | ((posKey >> groupSize) & mask);
 		X = (X << groupSize) | ((posKey >> (2 * groupSize)) & mask);
-
-		// 更新状态为下一个组的状态
 		state = HSM[pos];
 	}
 }
