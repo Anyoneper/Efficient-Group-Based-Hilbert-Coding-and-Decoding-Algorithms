@@ -17,7 +17,7 @@ std::vector<uint8_t> HSM;
 	en_FVFG, the virtual-filling based group encoding algorithm.
 	X: the first coordinate component
 	Y: the second coordinate component
-    Z: the third coordinate component
+    	Z: the third coordinate component
 	order: the number of orders
 	groupSize: group size
 */
@@ -49,7 +49,7 @@ void en_FVFG(bitmask_t& hcode, halfmask_t X, halfmask_t Y, halfmask_t Z, int ord
 	de_FVFG, the virtual-filling based group decoding algorithm.
 	X: the first coordinate component
 	Y: the second coordinate component
-    Z: the third coordinate component
+    	Z: the third coordinate component
 	order: the number of orders
 	groupSize: group size
 */
@@ -74,7 +74,7 @@ void de_FVFG(bitmask_t hcode, halfmask_t& X, halfmask_t& Y, halfmask_t& Z, int o
 		Y = (Y << groupSize) | ((posKey >> groupSize) & mask);
 		X = (X << groupSize) | ((posKey >> (2 * groupSize)) & mask);
 
-		// ¸üĞÂ×´Ì¬ÎªÏÂÒ»¸ö×éµÄ×´Ì¬
+		// æ›´æ–°çŠ¶æ€ä¸ºä¸‹ä¸€ä¸ªç»„çš„çŠ¶æ€
 		state = HSM[pos];
 	}
 }
