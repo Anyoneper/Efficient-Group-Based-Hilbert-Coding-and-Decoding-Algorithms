@@ -1,8 +1,8 @@
-#Efficient Group-Based Hilbert Coding and Decoding Algorithms
+Efficient Group-Based Hilbert Coding and Decoding Algorithms
 
 The repository contains two folders: 2D and 3D.
 The 2D folder contains four files: CHM_8.bin, CSM_8.bin, HCM_8.bin, and HSM_8.bin, which correspond to the four computed 8-order state views, i.e., CHM, CSM, HCM, and HSM, respectively.
-The 3D folder contains four files: CHM_4.bin, CSM_4.bin, HCM_4.bin and HSM_4.bin, which correspond to the four calculated 4-order state views, i.e., CHM, CSM, HCM and HSM, respectively.
+The 3D folder contains four files: CHM_4.bin, CSM_4.bin, HCM_4.bin, and HSM_4.bin, which correspond to the four computed 4-order state views, i.e., CHM, CSM, HCM, and HSM, respectively.
 
 Meanwhile Group_K.cpp provides the generation of the K-order state-views CHM_k, CSM_k, HCM_k, and HSM_k, and the order K can be modified by yourself. It can be opened and executed separately through Group_K.cpp.
 
